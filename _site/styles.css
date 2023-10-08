@@ -1,0 +1,131 @@
+body {
+    font-family: 'Noto Serif JP', serif; /* A Japanese influenced font. */
+    background-color: #e6e4e1; /* A calm muted beige background, reminiscent of rice paper */
+    color: #333; /* A deep charcoal color */
+    line-height: 1.7;
+    padding: 30px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #755c58; /* A deep brownish color, common in East Asian design */
+}
+
+a {
+    font-size: 1.2em; /* Making links like 'Contact', 'CV' etc. larger */
+    color: #755c58;
+    text-decoration: none;
+    border-bottom: 1px dotted #755c58; 
+    margin-right: 25px; /* Some spacing between the links */
+}
+
+a:hover {
+    color: #333; /* Darker on hover for contrast */
+    border-bottom: 1px solid #333;
+}
+
+.pubtitle, .publication-title {
+    font-size: 1.8em;
+}
+
+.pubitem, .page {
+    border-top: 3px double #ccc; /* A double-line border for a touch of traditional design */
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+
+
+.pubteaser img, .publication-teaser img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #755c58;
+}
+
+.portrait-image {
+    max-width: 250px; /* Adjust this va4ue according to your preference */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* This will center the image if the container is wider than the image */
+}
+
+
+.header {
+    position: relative;
+}
+
+
+.profile-section {
+    display: flex;
+    align-items: center; /* Vertical alignment */
+}
+
+.portrait-image {
+    margin-right: 20px; /* Spacing between the image and the sentence */
+    border-radius: 7%; /* Rounded corners */
+    margin-top: 20px; /* A little spacing between the image and the nav */
+}
+
+.profile-description {
+    flex: 1; /* Allows the sentence to take up remaining horizontal space */
+}
+
+.main-content {
+    font-size: 1.12em;
+}
+
+
+
+
+/* Use a bamboo pattern or any other East Asian motif as a subtle background. 
+   You'd need to source an appropriate pattern for this. */
+body {
+    background-image: url('path_to_pattern_image.png'); /* Replace with your image path */
+    background-repeat: repeat;
+    background-position: center;
+}
+
+/* The primary navigation items like 'Contact', 'CV' etc. can also be emphasized further with padding and maybe an underline. */
+nav a {
+    padding: 5px 10px;
+    border: 1px solid transparent;
+}
+
+nav a:hover {
+    border-bottom: 1px solid #333;
+    border-radius: 5px;
+}
+
+/* The general container for each section */
+.section {
+    margin: 40px 0;
+    padding: 20px 0;
+    border-bottom: 2px solid #e9e9e9;  /* light grey line for separation */
+}
+
+/* The title of each section */
+.section-title {
+    font-family: 'YourUniqueFont', sans-serif;  /* Replace with your chosen font */
+    font-size: 1.8em;
+    color: #2c3e50;  /* A deep blue color */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Optional: Icon before each title */
+.section-title::before {
+    content: url('path_to_icon_image.png');  /* Replace with your icon path */
+    position: absolute;
+    left: -30px;  /* Adjust based on icon size */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Hover effect for interactive elements */
+.interactive-element:hover {
+    color: #2980b9;  /* A brighter blue color */
+    transform: translateY(-2px);  /* Slight upward movement */
+}
+
+
