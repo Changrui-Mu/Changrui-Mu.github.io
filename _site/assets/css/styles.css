@@ -138,3 +138,31 @@ nav a:hover {
     transform: translateY(-2px);  /* Slight upward movement */
 }
 
+
+.experience-section {
+    font-family: 'Noto Serif JP', serif; /* Or any other font you prefer */
+}
+
+.job {
+    margin-bottom: 20px; /* Spacing between job entries */
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between; /* This pushes items to the left and right edges */
+    align-items: center;
+}
+
+.job-title {
+    flex: 1; /* This will allow the title to take up available space and push the company name to the right */
+}
+
+.company-name {
+    font-weight: bold; /* Make the company name bold */
+    margin-left: 20px; /* Spacing between job title and company name */
+}
+
+.job-details {
+    padding-left: 20px; /* Indentation for job details */
+}
+
