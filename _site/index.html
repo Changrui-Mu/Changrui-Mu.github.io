@@ -5,66 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Changrui Mu</title>
+    <title>Your Site's Title</title>
+
+    <!-- MathJax CDN for LaTeX rendering -->
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <!-- Optional: Configuration for using dollar signs for inline math notation -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$']]
+        }
+      };
+    </script>
 </head>
 
 <body>
+    <div class="home">
+<h2 class="post-list-heading">Posts</h2>
+    <ul class="post-list"><li><span class="post-meta">Oct 8, 2023</span>
+        <h3>
+          <a class="post-link" href="/jekyll/update/2023/10/08/welcome-to-jekyll.html">
+            Welcome to Jekyll!
+          </a>
+        </h3></li></ul>
 
-    <div class="container">
-        <div class="header">
-            <h1>Changrui Mu</h1>
-            <nav>
-                <a href="#contact">Contact</a>
-                <a href="#cv">CV</a>
-                <a href="#blog">Blog</a>
-                <a href="#publications">Publications</a>
-                <a href="#talks">Talks</a>
-            </nav>
-        </div>
-        <div class="profile-section">
-            <img src="/assets/mu.png" alt="Your Portrait" class="portrait-image">
-            <p class="profile-description"> </p>
-           <!-- <p class="profile-description">Life is a choice between fabricated scarcity and abunce of reality.</p> -->
-        </div>
-
-    </div>
-    <div class="main-content">
-        <p>Hi, I'm Changrui! Some chase the unknown in the cosmos, my dream is to chase the intricate enigmas nestled within the realm of cryptography and computation. Straddling the edge of what can be believed, &nbsp;known,&nbsp;proved, and solved, I'd like to navigate the intricate boundaries between the computable and the unbounded — the limitations set by the very fabric of our existence.
-        </p>
-        <p>
-        I am fortunate to be supervised by <a href="https://www.comp.nus.edu.sg/~prashant/" target="_blank">Professor. Prashant Nalini Vasudevan</a>in my research on cryptography and complexity theory, specifically focusing on interactive proofs, for over the past two years. <sup><a href="#footnote1" id="ref1">1</a></sup>
-        </p>
-        <p>
-        In the summer of 2023, I had the privilege of working closely with <a href="https://csaws.cs.technion.ac.il/~rothblum/" target="_blank">Professor Ron D. Rothblum</a>at Technion, focusing on Statistical Zero Knowledge Proofs. <sup><a href="#footnote2" id="ref2">2</a></sup><sup>
-        </p>
-        <p>
-         In addition to research, I also love teaching and sharing knowledge. I am the main Teaching Assistant for <a href="https://nusmods.com/courses/CS3235/computer-security" >CS3235 Computer Security</a>  instructed by <a href="https://www.comp.nus.edu.sg/~reza/" target="_blank">Professor Reza Shokri</a>  and for <a href="https://nusmods.com/courses/CS4236/cryptography-theory-and-practice" target="_blank">CS4236 Cryptography Theory and Practice</a> instructed by <a href="https://www.comp.nus.edu.sg/~prashant/" target="_blank">Professor. Prashant Nalini Vasudevan</a>.
-        </p>
-    </div>
-
-    <div class="section">
-    <h2 class="section-title">Education</h2>
-        <!-- Your education content here -->
-    </div>
-
-    <div class="section">
-        <h2 class="section-title">Publications</h2>
-        <!-- Your publications content here -->
-    </div>
-
-
-        <div class="footer">
-            <hr>
-            <p>
-            <sup id="footnote1">1</sup> I have been deeply moved by Dr. Vasudevan's pure and rigorous attitude towards academic pursuits that seek to better human society. His patience, encouragement, and always insightful support have inspired me to continue with pure academic research after graduation. <a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a>
-            </p>
-            <p>
-            <sup id="footnote2">2</sup>Dr. Rothblum has frequently provided me with new perspectives on cryptography and suggestions on both research and my impressive journey in Israel. I am truly amazed by his profound knowledge and genuine enthusiasm for the field. Working with him has further solidified my path towards theoretical research. I was also lucky to meet Shafik Nassar, who took me to the best coffee house and bar in Haifa. We shared my interests and collaboratively explored intriguing questions.<a href="#ref1" title="Jump back to footnote 2 in the text.">↩</a>
-            </p>
-            <p>© 2023 Changrui Mu | <a href="mailto:your-email@example.com">E-mail</a> | <a href="#rss">RSS</a></p>
-        </div>
-    </div>
+    <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p></div>
 
 </body>
 
