@@ -164,3 +164,67 @@ nav a:hover {
     padding-left: 20px; /* Indentation for job details */
 }
 
+#contactPopup button {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+#contactPopup button:hover {
+    text-decoration: none;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #faf3e0; /* Creamy, soothing background color */
+    border: 1px solid #a8a8a8;
+    border-radius: 8px; /* Slightly rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    width: 300px; /* Fixed width for consistent sizing */
+    font-family: 'Kosugi Maru', sans-serif; /* Japanese-style font */
+}
+
+.popupCloseBtn {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #a8a8a8;
+}
+
+.popup p {
+    text-align: center;
+    color: #333;
+}
+
+.popup button {
+    margin-top: 10px;
+    background-color: #a8a8a8;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #faf3e0;
+}
+
+.popup button:hover {
+    background-color: #333;
+    color: #faf3e0;
+}
+
+
+

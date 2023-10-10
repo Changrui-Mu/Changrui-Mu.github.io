@@ -16,13 +16,19 @@
             <h1>Changrui Mu</h1>
             <nav>
                 <a href="#home">Home</a>
-                <a href="#contact">Contact</a>
+                <a id="contactBtn" href="javascript:void(0);" onclick="showPopup()">Contact Me</a>
                 <a href="/assets/CV.pdf" target="_blank" class="cv-link">CV</a>
                 <a href="https://www.linkedin.com/in/changrui-mu/">Linkedin</a>
                 <a href="https://github.com/Ch40gRv1-Mu">GitHub</a>
-                 <a href="#peom">Poems</a>
+                 <a href="#poem">Poems</a>
             </nav>
         </div>
+        <!-- pop-up window -->
+        <div id="contactPopup" class="popup">
+            <span class="popupCloseBtn" onclick="closePopup()">&times;</span>
+            <p>My email: <span id="emailText">changrui.mu@u.nus.edu</span> <button onclick="copyToClipboard()">Copy</button></p>
+        </div>
+
         <div class="profile-section">
             <img src="assets/mu.png" alt="Your Portrait" class="portrait-image">
             <p class="profile-description"><div class="main-content">
@@ -137,3 +143,25 @@
 </body>
 
 </html>
+
+
+<script>
+    function showPopup() {
+        document.getElementById("contactPopup").style.display = "block";
+    }
+
+    function closePopup() {
+        document.getElementById("contactPopup").style.display = "none";
+    }
+
+    function copyToClipboard() {
+        const textArea = document.createElement("textarea");
+        textArea.value = document.getElementById("emailText").textContent;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("Copy");
+        textArea.remove();
+        alert("Email copied to clipboard!");
+    }
+</script>
+
