@@ -91,7 +91,6 @@ a:after {
 /* Use a bamboo pattern or any other East Asian motif as a subtle background. 
    You'd need to source an appropriate pattern for this. */
 body {
-    background-image: url('path_to_pattern_image.png'); /* Replace with your image path */
     background-repeat: repeat;
     background-position: center;
 }
@@ -125,7 +124,6 @@ nav a:hover {
 
 /* Optional: Icon before each title */
 .section-title::before {
-    content: url('path_to_icon_image.png');  /* Replace with your icon path */
     position: absolute;
     left: -30px;  /* Adjust based on icon size */
     top: 50%;
