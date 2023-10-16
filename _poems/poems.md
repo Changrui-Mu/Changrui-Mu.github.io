@@ -50,9 +50,10 @@ title: "Changrui's Peoms"
     </script>
 </head>
 <ul>
-  {% for poem in site.poems %}
+  {% assign sorted_poems = site.poems | sort: 'ts' | reverse%}
+  {% for poem in sorted_poems %}
   {% if poem.url != page.url %}
-    <li><a href="{{ poem.url }}">{{ poem.title }}</a></li>
+    <li><a href="{{ poem.url }}">{{ poem.title_en }}</a></li>
 {% endif %}
   {% endfor %}
 </ul>

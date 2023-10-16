@@ -4,6 +4,9 @@ title_en: "Abyss"
 title_cn: "深渊"
 image_path: "/assets/abyss.png"
 image_desc: "Image Description"
+time:  August 2023
+ts: 2023-08-01
+spot: Yerevan, Armenia
 ---
 
     当你敢睁开双眼,  

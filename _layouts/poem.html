@@ -57,6 +57,12 @@
             {{ content | split:"<!--split-->" | last | markdownify }}
         </div>
     </div>
+    <div class="metadata" style="text-align: right; font-size: 0.8em; margin-top: 20px;">
+    {% if page.time %}{{ page.time }}{% endif %}
+    {% if page.time and page.spot %} | {% endif %}
+    {% if page.spot %}{{ page.spot }}{% endif %}
+    </div>
+
 
     <script>
         window.onload = function() {
@@ -70,7 +76,7 @@
                 item.style.display = 'block';
             }
         }
-        
+
         function toggleLanguage() {
             var chinesePoem = document.querySelectorAll('.chinese');
             var englishPoem = document.querySelectorAll('.english');
