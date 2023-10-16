@@ -61,10 +61,6 @@ a:after {
 }
 
 
-.header {
-    position: relative;
-}
-
 
 .profile-section {
     display: flex;
@@ -94,18 +90,28 @@ body {
     background-repeat: repeat;
     background-position: center;
 }
+.header {
+    position: fixed; /* makes the header fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* makes the header span the full width of the page */
+    background-color: #fff; /* set a background color to make it stand out */
+    z-index: 100; /* ensures the header stays above other content */
+}
 
-/* The primary navigation items like 'Contact', 'CV' etc. can also be emphasized further with padding and maybe an underline. */
 nav a {
-    padding: 5px 10px;
-    border: 1px solid transparent;
+    padding: 10px 15px; /* add some space around the links */
+    margin: 5px; /* add some space between the links */
+    background-color: #f4f4f4; /* button background color */
+    color: #333; /* text color */
+    text-decoration: none; /* remove underline from links */
+    border-radius: 5px; /* round the corners of the buttons */
+    transition: background-color 0.3s; /* smooth transition effect when hovering */
 }
 
 nav a:hover {
-    border-bottom: 1px solid #333;
-    border-radius: 5px;
+    background-color: #ddd; /* change button background color on hover */
 }
-
 
 
 
@@ -230,21 +236,6 @@ nav a:hover {
     background-color: #333;
     color: #faf3e0;
 }
-
-.poem-container {
-    text-align: center; /* Align content to the center */
-}
-
-.poem-container img {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.poem-container p {
-    display: inline-block;
-    text-align: left; /* Keep the poem's text alignment to the left, but centered overall */
-}
-
 
 
 

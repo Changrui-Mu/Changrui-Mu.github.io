@@ -1,6 +1,7 @@
 ---
 # Front Matter
 layout: home
+poems: peom
 ---
 
 # Welcome to My Website

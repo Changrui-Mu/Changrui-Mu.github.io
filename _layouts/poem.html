@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - Changrui Mu's Poems</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- Add any other meta tags, stylesheets or scripts you need here -->
+    <style>
+        .chinese, .english {
+            display: none;
+        }
+        img {
+            width: 50%;
+            max-width: 800px;
+            display: block;
+            margin: 20px auto;
+        }
+        button {
+            background-color: #e0e0e0;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin: 10px auto;
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        button:hover {
+            background-color: #d0d0d0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header" style="text-align: left;">
+        <nav>
+            <a href="/">Home</a>
+            <a href="poems">Poems</a>
+            <button onclick="toggleLanguage()" style="position: absolute; top: 20px; right: 20px;">Toggle Language</button>
+        </nav>
+    </div>
+
+
+    <div class="poem-container">
+        <h1 class="chinese" style="text-align: center; display: none;">{{ page.title_cn }}</h1>
+        <h1 class="english" style="text-align: center;">{{ page.title_en }}</h1>
+
+        <img src="{{ page.image_path }}" alt="{{ page.image_desc }}">
+
+        <div class="content chinese" style="display: none;">
+            {{ content | split:"<!--split-->" | first | markdownify }}
+        </div>
+
+        <div class="content english">
+            {{ content | split:"<!--split-->" | last | markdownify }}
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            var chinesePoem = document.querySelectorAll('.chinese');
+            var englishPoem = document.querySelectorAll('.english');
+
+            for(let item of chinesePoem) {
+                item.style.display = 'none';
+            }
+            for(let item of englishPoem) {
+                item.style.display = 'block';
+            }
+        }
+        
+        function toggleLanguage() {
+            var chinesePoem = document.querySelectorAll('.chinese');
+            var englishPoem = document.querySelectorAll('.english');
+
+            for(let item of chinesePoem) {
+                if (item.style.display === "none") {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            }
+
+            for(let item of englishPoem) {
+                if (item.style.display === "none") {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
