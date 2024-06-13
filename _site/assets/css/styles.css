@@ -121,9 +121,9 @@ nav a:hover {
 /* The title of each section */
 .section-title {
     font-family: 'YourUniqueFont', sans-serif;  /* Replace with your chosen font */
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: #2c3e50;  /* A deep blue color */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position: relative;
 }
 
@@ -141,6 +141,9 @@ nav a:hover {
     transform: translateY(-2px);  /* Slight upward movement */
 }
 
+p {
+    margin-bottom: 0.5em; /* Adjust this value to your preference */
+}
 
 .experience-section {
     font-family: 'Noto Serif JP', serif; /* Or any other font you prefer */
