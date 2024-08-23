@@ -14,8 +14,6 @@ title: Alice's CV
 ## Education
 
 - **National University of Singapore**: Bachelor of Computing (Information Security), August 2020 - June 2024
-  - **GPA**: 4.72/5.0
-
 ## Teaching Experience
 
 - **Main Teaching Assistant**: CS4236: Cryptography Theory and Practice, August 2023 - Present
