@@ -9,7 +9,7 @@ ts: 2023-07-01
 spot: Near Camel Beach, Haifa, Israel
 ---
 
-海风千万里, 月过群山区。  
+海风千万里, 月过群山去。  
 但见星辰， 且听鸟鸣.   
 
 <!--split-->
