@@ -29,6 +29,16 @@
             <p>My email: <span id="emailText">changrui.mu@u.nus.edu</span> <button onclick="copyToClipboard()">Copy</button></p>
         </div>
 
+        <!-- pop-up window -->
+        <div id="mvPopup" class="popup">
+            <span class="popupCloseBtn" onclick="closeMvPopup()">&times;</span>
+            <p>Prashant and Changrui: 
+                <div id="hiddenImageContainer" style="display:none; margin-top: 20px;">
+                    <img src="assets/Changrui&Prashant1tC1cjdUV1.png"  style="max-width: 100%; height: auto;">
+                </div>
+            </p>
+        </div>
+
         <div class="profile-section">
             <img src="assets/mu.png" alt="Your Portrait" class="portrait-image">
             <p class="profile-description"><div class="main-content">
@@ -60,7 +70,7 @@
         <h2 class="section-title">Publications</h2>
         <div class="main-content">
         <ul>
-            <li><b>Instance-Hiding Interactive Proof </b> <a href="https://eccc.weizmann.ac.il/report/2024/100/" target="_blank"  style="font-size: inherit;">[ECCC]</a>, <a href="https://eprint.iacr.org/2024/776" target="_blank"  style="font-size: inherit;">[IACR]</a><br> Changrui Mu, Prashant Nalini Vasudevan <br> TCC2024</li>
+            <li><b>Instance-Hiding Interactive Proof </b> <a href="https://eccc.weizmann.ac.il/report/2024/100/" target="_blank"  style="font-size: inherit;">[ECCC]</a>, <a href="https://eprint.iacr.org/2024/776" target="_blank"  style="font-size: inherit;">[IACR]</a><br> <a id="mvBtn" href="javascript:void(0);" onclick="showMvPopup()" style="font-size: inherit;">Changrui Mu, Prashant Nalini Vasudevan </a> <br>  TCC2024</li>
             <li><b>Strong Batching for Non-Interactive Statistical Zero-Knowledge</b> <a href="https://eccc.weizmann.ac.il/report/2024/024" target="_blank"  style="font-size: inherit;">[ECCC]</a>, <a href="https://eprint.iacr.org/2024/229" target="_blank"  style="font-size: inherit;">[IACR]</a><br> Changrui Mu, Shafik Nassar, Ron D. Rothblum and Prashant Nalini Vasudevan<br> Eurocrypt2024</li>
         </ul>
         </div>
@@ -149,6 +159,15 @@
 
     function closePopup() {
         document.getElementById("contactPopup").style.display = "none";
+    }
+
+    function showMvPopup() {
+        document.getElementById("mvPopup").style.display = "block";
+        document.getElementById("hiddenImageContainer").style.display = "block";
+    }
+
+    function closeMvPopup() {
+        document.getElementById("mvPopup").style.display = "none";
     }
 
     function copyToClipboard() {
