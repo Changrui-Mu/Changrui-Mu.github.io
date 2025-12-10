@@ -1,0 +1,11 @@
+"xcrun clang -o conftest -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin24 -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/ruby/backward -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0 -I. -I/opt/homebrew/opt/openssl/include  -g -Os -pipe -DHAVE_GCC_ATOMIC_BUILTINS -fno-typed-memory-operations -fno-typed-cxx-new-delete -DUSE_FFI_CLOSURE_ALLOC conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib -L/opt/homebrew/opt/openssl/lib     -lruby.2.6   "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+

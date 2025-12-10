@@ -11,173 +11,193 @@
 </head>
 
 <body>
-
     <div class="container">
-        <div class="header">
-            <h1>Changrui Mu</h1>
-            <nav>
-                <a href="/">Home</a>
-                <a id="contactBtn" href="javascript:void(0);" onclick="showPopup()">Contact Me</a>
-                <a href="/assets/CV.pdf" target="_blank" class="cv-link">CV</a>
-                <a href="https://github.com/Ch40gRv1-Mu">GitHub</a>
-                 <a href="poems/poems">Poems</a>
-            </nav>
-        </div>
-        <!-- pop-up window -->
+        <header class="site-header">
+            <div class="site-header-main">
+                <div class="site-identity">
+                    <h1 class="site-title">Changrui Mu</h1>
+                    <p class="site-tagline">Cryptography · Machine Learning · Theory</p>
+                </div>
+                <nav class="site-nav">
+                    <a href="/">Home</a>
+                    <a href="https://github.com/Ch40gRv1-Mu" target="_blank">GitHub</a>
+                    <a href="poems/poems">Poems</a>
+                    <a id="contactBtn" href="javascript:void(0);" onclick="showPopup()">Contact</a>
+                </nav>
+            </div>
+        </header>
+
         <div id="contactPopup" class="popup">
             <span class="popupCloseBtn" onclick="closePopup()">&times;</span>
             <p>My email: <span id="emailText">changrui.mu@u.nus.edu</span> <button onclick="copyToClipboard()">Copy</button></p>
         </div>
 
-        <!-- pop-up window -->
         <div id="mvPopup" class="popup">
             <span class="popupCloseBtn" onclick="closeMvPopup()">&times;</span>
-            <p>Prashant and Changrui: 
-                <div id="hiddenImageContainer" style="display:none; margin-top: 20px;">
-                    <img src="assets/Changrui&Prashant1tC1cjdUV1.png"  style="max-width: 100%; height: auto;">
-                </div>
+            <p>Prashant and Changrui:
+            <div id="hiddenImageContainer" style="display:none; margin-top: 20px;">
+                <img src="assets/Changrui&Prashant1tC1cjdUV1.png" style="max-width: 100%; height: auto;">
+            </div>
             </p>
         </div>
 
-        <div class="profile-section">
-            <img src="assets/mu.png" alt="Your Portrait" class="portrait-image">
-            <p class="profile-description"><div class="main-content">
-       
-        </div> </p>
-           <!-- <p class="profile-description">Life is a choice between fabricated scarcity and abunce of reality.</p> -->
-        </div>
+        <main>
+            <section class="hero" id="top">
+                <div class="profile-section">
+                    <img src="assets/mu.png" alt="Changrui Mu" class="portrait-image">
+                    <div class="profile-description">
+                        <p>I am a first-year PhD student in the Computer Science Department at CMU, where I am fortunate to be advised by <a href="https://elaineshi.com/" target="_blank" style="font-size: inherit;">Elaine Shi</a>. I’m interested in cryptography, particularly its connections to trustworthy machine learning.</p>
 
+                        <p>I believe that good theoretical research guides practice, and applications improve lives and security. Dynamic alignment between them benefits society.</p>
+
+                        <p>Before CMU, I was a research assistant at NUS, where I was fortunate to be advised by <a href="https://www.comp.nus.edu.sg/~prashant/" target="_blank" style="font-size: inherit;">Prashant Nalini Vasudevan.</a></p>
+
+                        <div class="hero-tags">
+                            <span class="tag">Cryptography</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Theory</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="publications" class="section">
+                <h2 class="section-title">Publications</h2>
+                <div class="main-content">
+                    <ul>
+                        <li>
+                            <b>Public-Key Encryption from the MinRank Problem.</b>
+                            <a href="https://eprint.iacr.org/2025/1833" target="_blank" style="font-size: inherit;">[ePrint]</a>,
+                            <a href="https://arxiv.org/abs/2510.03752" target="_blank" style="font-size: inherit;">[arXiv]</a><br>
+                            Rohit Chatterjee, Changrui Mu, Prashant Nalini Vasudevan.<br>
+                            On submission (preprint, 2025).
+                        </li>
+                        <li>
+                            <b>Decentralized Data Archival: New Definitions and Constructions.</b>
+                            <a href="https://eprint.iacr.org/2025/969" target="_blank" style="font-size: inherit;">[ePrint]</a><br>
+                            Elaine Shi, Rose Silver, Changrui Mu (randomized order).<br>
+                            ITCS 2026.
+                        </li>
+                        <li>
+                            <b>Strong Batching for Non-interactive Statistical Zero-Knowledge.</b>
+                            <a href="https://eccc.weizmann.ac.il/report/2024/024" target="_blank" style="font-size: inherit;">[ECCC]</a>,
+                            <a href="https://eprint.iacr.org/2024/229" target="_blank" style="font-size: inherit;">[IACR]</a><br>
+                            Changrui Mu, Shafik Nassar, Ron D. Rothblum, Prashant Nalini Vasudevan.<br>
+                            EUROCRYPT 2024.
+                        </li>
+                        <li>
+                            <b>Instance-Hiding Interactive Proofs.</b>
+                            <a href="https://eccc.weizmann.ac.il/report/2024/100/" target="_blank" style="font-size: inherit;">[ECCC]</a>,
+                            <a href="https://eprint.iacr.org/2024/776" target="_blank" style="font-size: inherit;">[IACR]</a><br>
+                            <a id="mvBtn" href="javascript:void(0);" onclick="showMvPopup()" style="font-size: inherit;">Changrui Mu, Prashant Nalini Vasudevan</a><br>
+                            TCC 2024.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="research" class="section">
+                <h2 class="section-title">Research and Teaching Experience</h2>
+                <div class="main-content">
+                    <p>
+                        I was fortunate to be supervised by <a href="https://www.comp.nus.edu.sg/~prashant/" target="_blank" style="font-size: inherit;">Dr. Prashant Nalini Vasudevan</a> in my undergraduate final year project, and our research continued focusing on interactive proofs for the past two years. In the summer of 2023, I had the honor of being hosted by <a href="https://csaws.cs.technion.ac.il/~rothblum/" target="_blank" style="font-size: inherit;">Dr. Ron D. Rothblum</a> at Technion as visiting student researcher, focusing on statistical zero-knowledge proofs.
+                        In addition to my research endeavors, I have a passion for teaching and disseminating knowledge. I serve as the lead Teaching Assistant for <a href="https://nusmods.com/courses/CS3235/computer-security" style="font-size: inherit;">CS3235 Computer Security</a> under the guidance of <a href="https://www.comp.nus.edu.sg/~reza/" target="_blank" style="font-size: inherit;">Dr. Reza Shokri</a> and for <a href="https://nusmods.com/courses/CS4236/cryptography-theory-and-practice" target="_blank" style="font-size: inherit;">CS4236 Cryptography Theory and Practice</a> instructed by <a href="https://www.comp.nus.edu.sg/~prashant/" target="_blank" style="font-size: inherit;">Dr. Prashant Nalini Vasudevan</a>.
+                    </p>
+                </div>
+            </section>
+
+            <section id="talks" class="section">
+                <h2 class="section-title">Invited Talks</h2>
+                <div class="main-content">
+                    <ul>
+                        <li><a href="https://easit2024.github.io/" style="font-size: inherit;">IEEE East Asian School of Information Theory (EASIT 2024)</a><br>Title: Strong Batching for Non-Interactive Statistical Zero-Knowledge <br> Poster Presentation (Outstanding Poster Presentation Award) <a href="https://changrui-mu.github.io/assets/EASIT_NISZK_poster.pdf" style="font-size: inherit;">[Poster]</a> <br>2024 July, Shonan Village Center, Japan<br></li>
+                        <li><a href="https://eurocrypt.iacr.org/2024/program.php" style="font-size: inherit;">Eurocrypt 2024 Main Session</a><br>Title: Strong Batching for Non-Interactive Statistical Zero-Knowledge<br>2024 May, ETH<br></li>
+                        <li><a href="https://eurocrypt.iacr.org/2024/rumpsession.php" style="font-size: inherit;">Eurocrypt 2024 Rump Session</a><br>Title: If Verifier Also Wants Privacy<br>2024 May, ETH<br></li>
+                        <li><a href="https://algotheoryseminar.comp.nus.edu.sg/" style="font-size: inherit;">NUS AlgoTheory Seminar</a><br>Title: Strong Batching for Non-Interactive Statistical Zero-Knowledge<br>2024 April, NUS<br></li>
+                        <li><a href="https://personal.ntu.edu.sg/hxwang/" style="font-size: inherit;">NTU Cryptography Seminar</a><br>Title: Batch Verification for Statistical Zero-Knowledge Proofs<br>2024 March, Nanyang Technological University<br></li>
+                        <li><a href="https://conferences.cis.um.edu.mo/ijtcs2023/invited_speakers.html" style="font-size: inherit;">IJTCS 2023 Undergraduate Forum</a><br>Title: Non-Interactive Statistical Zero Knowledge Proof<br>2023 August, University of Macau<br></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="service" class="section">
+                <h2 class="section-title">Academic Service</h2>
+                <div class="main-content">
+                    <p class="service-row">
+                        <span class="service-label">Delegated reviewer:</span>
+                        TCC 2024 ·
+                        Asiacrypt 2024 ·
+                        Crypto 2025 ·
+                        Asiacrypt 2025 ·
+                        ITC 2025 ·
+                        Eurocrypt 2026 ·
+                        STOC 2026
+                    </p>
+                </div>
+            </section>
+
+            <section id="awards" class="section">
+                <h2 class="section-title">Selected Awards</h2>
+                <div class="main-content">
+                    <ul>
+                        <li>2024 <a href="https://www.credential.net/5a1d84c8-4de1-4064-95bd-eea0f8eb4da8?username=muchangrui459441#gs.dhbtbd" style="font-size: inherit;">IEEE EASIT 2024 Outstanding Poster Presentation Award</a></li>
+                        <li>2022 <a href="https://credentials.nus.edu.sg/2bca4b24-e14d-4fd9-af4c-cbadff76d9e5#gs.32a3jh" style="font-size: inherit;">NUS: Dean's List</a></li>
+                        <li>2021 <a href="https://credentials.nus.edu.sg/04862e26-ab42-4311-9d8d-daea1ace2b44" style="font-size: inherit;">NUS: Top Students in Computer Security</a></li>
+                        <li>2021 <a href="https://www.credential.net/c9768ce8-aba5-450e-a5cd-a1aeebbc2569?username=muchangrui459441#gs.65b7mx" style="font-size: inherit;">2nd Place in the Enthusiast Track of Singapore Blockchain Innovation Challenge 2021</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="industry" class="section">
+                <h2 class="section-title">Industry Experience</h2>
+                <div class="experience-section">
+                    <div class="job">
+                        <div class="job-header">
+                            <span class="job-title"><b>Smart Contract Security Engineer (Part-time Intern)</b></span>
+                            <span class="company-name">Binance</span>
+                        </div>
+                        <div class="job-details">August 2022 - August 2023, Singapore</div>
+                    </div>
+                    <div class="job">
+                        <div class="job-header">
+                            <span class="job-title"><b>Backend Engineer (Full-time Intern)</b></span>
+                            <span class="company-name">TikTok</span>
+                        </div>
+                        <div class="job-details">May 2022 - August 2022, Singapore</div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
-    <div class="main-content">
-        <p>Hi! I'm Changrui. I am fortunately working as the research assistant at NUS with <a href="https://www.comp.nus.edu.sg/~prashant/" target="_blank"  style="font-size: inherit;">Dr. Prashant Nalini Vasudevan.</a> <br>
-            My research interest lies in, cryptography, theoretical computer science, and computer security in general. I believe that good theoretical research guides practice, and applications improve lives and security. Dynamic alignment between them benefits society.
-        </p>
-    </div>
 
-    <div class="section">
-        <h2 class="section-title">Reseach and Teaching Experience</h2>
-        <div class="main-content">
-            <p>
-                I was fortunate to be supervised by <a href="https://www.comp.nus.edu.sg/~prashant/" target="_blank"  style="font-size: inherit;">Dr. Prashant Nalini Vasudevan</a> in my undergraduate final year project, and our research continued focusing on Interactive Proofs for the past two years. In the summer of 2023, I had the honor of being hosted by <a href="https://csaws.cs.technion.ac.il/~rothblum/" target="_blank" style="font-size: inherit;">Dr. Ron D. Rothblum</a> at Technion as visting student researcher, focusing on Statistical Zero Knowledge Proofs. <br>
-                In addition to my research endeavors, I have a passion for teaching and disseminating knowledge. I serve as the lead Teaching Assistant for <a href="https://nusmods.com/courses/CS3235/computer-security" style="font-size: inherit;">CS3235 Computer Security</a> under the guidance of <a href="https://www.comp.nus.edu.sg/~reza/" target="_blank" style="font-size: inherit;">Dr. Reza Shokri</a> and for <a href="https://nusmods.com/courses/CS4236/cryptography-theory-and-practice" target="_blank" style="font-size: inherit;">CS4236 Cryptography Theory and Practice</a> instructed by <a href="https://www.comp.nus.edu.sg/~prashant/" target="_blank" style="font-size: inherit;">Dr. Prashant Nalini Vasudevan</a>.
-    
-                </p>
-        </div>
-        <!-- Your publications content here -->
-    </div>
+    <script>
+        function showPopup() {
+            document.getElementById("contactPopup").style.display = "block";
+        }
 
-    <div class="section">
-        <h2 class="section-title">Publications</h2>
-        <div class="main-content">
-        <ul>
-            <li><b>Instance-Hiding Interactive Proof </b> <a href="https://eccc.weizmann.ac.il/report/2024/100/" target="_blank"  style="font-size: inherit;">[ECCC]</a>, <a href="https://eprint.iacr.org/2024/776" target="_blank"  style="font-size: inherit;">[IACR]</a><br> <a id="mvBtn" href="javascript:void(0);" onclick="showMvPopup()" style="font-size: inherit;">Changrui Mu, Prashant Nalini Vasudevan </a> <br>  TCC2024, invited to Journal of Cryptology</li>
-            <li><b>Strong Batching for Non-Interactive Statistical Zero-Knowledge</b> <a href="https://eccc.weizmann.ac.il/report/2024/024" target="_blank"  style="font-size: inherit;">[ECCC]</a>, <a href="https://eprint.iacr.org/2024/229" target="_blank"  style="font-size: inherit;">[IACR]</a><br> Changrui Mu, Shafik Nassar, Ron D. Rothblum and Prashant Nalini Vasudevan<br> Eurocrypt2024</li>
-        </ul>
-        </div>
-        <!-- Your publications content here -->
-    </div>
-    <div class="section">
-        <h2 class="section-title">Education</h2>
-        <ul>
-            <li>Bacholer of Computing (Information Security), Highest Distinction<br>National University of Singapore <br> August 2020 to December 2023</li>
-        </ul>
-    </div>
- 
+        function closePopup() {
+            document.getElementById("contactPopup").style.display = "none";
+        }
 
-    <div class="section">
-        <h2 class="section-title">Invited Talks</h2>
-        <div class="main-content">
-        <ul>
-            <li><a href="https://easit2024.github.io/"   style="font-size: inherit;">IEEE East Asian School of Information Theory (EASIT2024)</a><br>Title: Strong Batching for Non-Interactive Statistical Zero-Knowledge, <br> Poster Presentation (Outstanding Poster Presentation Award) <a href="https://changrui-mu.github.io/assets/EASIT_NISZK_poster.pdf"   style="font-size: inherit;">[Poster]</a> <br>2024 July, Shonan Village Center Japan<br></li>
-            <li><a href="https://eurocrypt.iacr.org/2024/program.php"   style="font-size: inherit;">Eurocrypt2024 Main Session</a><br>Title: Strong Batching for Non-Interactive Statistical Zero-Knowledge<br>2024 May, ETH<br></li>
-            <li><a href="https://eurocrypt.iacr.org/2024/rumpsession.php"   style="font-size: inherit;">Eurocrypt2024 Rump Session</a><br>Title: If Verifier Also Wants Privacy<br>2024 May, ETH<br></li>
-            <li><a href="https://algotheoryseminar.comp.nus.edu.sg/"   style="font-size: inherit;">NUS AlgoTheory Seminar</a><br>Title: Strong Batching for Non-Interactive Statistical Zero-Knowledge<br>2024 April, NUS<br></li>
-            <li><a href="https://personal.ntu.edu.sg/hxwang/"   style="font-size: inherit;">NTU Cryptography Seminar</a><br>Title: Batch Verification for Statistical Zero-Knowledge Proofs<br>2024 March, Nanyang Technological University<br></li>
-            <li><a href="https://conferences.cis.um.edu.mo/ijtcs2023/invited_speakers.html"   style="font-size: inherit;">IJTCS2023 Undergraduate Forum</a><br>Title: Non-Interactive Statistical Zero Knowledge Proof<br>2023 Augest, University of Macau<br></li>
-        </ul>
-        </div>
-        <!-- Your publications content here -->
-    </div>
+        function showMvPopup() {
+            document.getElementById("mvPopup").style.display = "block";
+            document.getElementById("hiddenImageContainer").style.display = "block";
+        }
 
-    <div class="section">
-        <h2 class="section-title">Academic Service</h2>
-        <div class="main-content">
-        <ul>
-            <li>Delegated Reviewer TCC2024</li>
-            <li>Delegated Reviewer Asiacrypt2024</li>
-        </ul>
-        </div>
-        <!-- Your publications content here -->
-    </div>
+        function closeMvPopup() {
+            document.getElementById("mvPopup").style.display = "none";
+        }
 
-    <div class="section">
-        <h2 class="section-title">Selected Awards</h2>
-        <div class="main-content">
-        <ul>
-            <li>2024 <a href="https://www.credential.net/5a1d84c8-4de1-4064-95bd-eea0f8eb4da8?username=muchangrui459441#gs.dhbtbd" style="font-size: inherit;">IEEE EASIT2024 Outstanding Poster Presentation Award</a></li>
-            <li>2022 <a href="https://credentials.nus.edu.sg/2bca4b24-e14d-4fd9-af4c-cbadff76d9e5#gs.32a3jh" style="font-size: inherit;">NUS: Dean's List</a></li>
-            <li>2021 <a href="https://credentials.nus.edu.sg/04862e26-ab42-4311-9d8d-daea1ace2b44" style="font-size: inherit;">NUS: Top Students in Computer Security</a></li>
-            <li>2021 <a href="https://www.credential.net/c9768ce8-aba5-450e-a5cd-a1aeebbc2569?username=muchangrui459441#gs.65b7mx" style="font-size: inherit;">2nd Place in the Enthusiast Track of Singapore Blockchain Innovation Challenge 2021</a></li>
-        </ul>
-        </div>
-        <!-- Your publications content here -->
-    </div>
-
-    <div class="section">
-    <h2 class="section-title">Industrial Experiences</h2>
-        <div class="job">
-            <div class="job-header">
-                <span class="job-title"><b>Smart Contract Security Engineer (Part-time Intern)</b></span>
-                <span class="company-name">Binance</span>
-            </div>
-            <div class="job-details">August 2022- August 2023, Singapore</div>
-        </div>
-        <div class="job">
-            <div class="job-header">
-                <span class="job-title"><b>Backend Engineer (Full-time Intern)</b></span>
-                <span class="company-name">TikTok</span>
-            </div>
-            <div class="job-details">May 2022- August 2022, Singapore</div>
-        </div>
-    </div>
-
-    <div class="section">
-
-
-
-    </div>
-
+        function copyToClipboard() {
+            const textArea = document.createElement("textarea");
+            textArea.value = document.getElementById("emailText").textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("Copy");
+            textArea.remove();
+            alert("Email copied to clipboard!");
+        }
+    </script>
 </body>
 
 </html>
-
-
-<script>
-    function showPopup() {
-        document.getElementById("contactPopup").style.display = "block";
-    }
-
-    function closePopup() {
-        document.getElementById("contactPopup").style.display = "none";
-    }
-
-    function showMvPopup() {
-        document.getElementById("mvPopup").style.display = "block";
-        document.getElementById("hiddenImageContainer").style.display = "block";
-    }
-
-    function closeMvPopup() {
-        document.getElementById("mvPopup").style.display = "none";
-    }
-
-    function copyToClipboard() {
-        const textArea = document.createElement("textarea");
-        textArea.value = document.getElementById("emailText").textContent;
-        document.body.appendChild(textArea);
-        textArea.select();
-        document.execCommand("Copy");
-        textArea.remove();
-        alert("Email copied to clipboard!");
-    }
-</script>
-
